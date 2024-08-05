@@ -20,3 +20,11 @@
 ```
 
 This code in ORION's load_CTD.py basically has a system to resolve conflicts between "marker" and "therapeutic" predicates.
+
+Monarch-Ingest/Koza produces only edges of type "biolink:treats_or_applied_or_studied_to_treat". It produces 38527 edges.
+
+ORION contains edges of type "CTD:contributes_to" and "biolink:treats_or_applied_or_studied_to_treat".
+CTD:contributes_to                               64355
+biolink:treats_or_applied_or_studied_to_treat    34766
+
+ORION is missing 3,761 "biolink:treats" edges which Koza ingested. Koza is missing all "CTD:contributes_to" edges.
